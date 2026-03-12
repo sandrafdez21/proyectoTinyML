@@ -1,0 +1,16 @@
+# Entornos virtuales
+venv/
+.venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Ignorar el dataset completo
+/datasets/dataset
+/datasets/tests
+
+#Ignorar archivos generados por el codigo
+resultado_entrenamiento.png
+/logs
