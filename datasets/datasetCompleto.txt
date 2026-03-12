@@ -1,0 +1,3 @@
+https://drive.google.com/drive/folders/1DnJqgj1_zILOrCFi_uO6IU4VDNu_tVfP?usp=drive_link ---> El 80% de este se dedicara al entrenamiento y el restante a la validacion
+
+https://drive.google.com/drive/folders/18RzpcSJMXxDX41bFFZ4HSbSms_L-ieub?usp=drive_link ---> Conjunto de imagenes para la fase de testeo
