@@ -141,3 +141,13 @@ for images, labels in test_ds.take(1):
 
     plt.savefig('resultado_entrenamiento.png')
     print("Gráfica guardada como resultado_entrenamiento.png")
+
+# Se exporta el modelo en formato normal
+model.save('models/modelo_caracoles_original.keras')
+
+# Se exporta en formato tflite
+converter = tf.lite.TFLiteConverter.from_keras_model(model)
+tflite_model = converter.convert()
+with open('models/modelo_caracoles_base.tflite', 'wb') as f:
+    f.write(tflite_model)
+
