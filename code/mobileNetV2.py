@@ -10,7 +10,7 @@ import numpy as np
 
 # CONSTANTES
 PATH_DATOS = 'datasets/dataset/'
-IMG_SIZE = (224, 224)
+IMG_SIZE = (96, 96)
 BATCH_SIZE = 32
 CONJUNTO_VALIDACION = 0.2
 #También
@@ -37,6 +37,10 @@ val_ds = tf.keras.utils.image_dataset_from_directory(
     batch_size=BATCH_SIZE
 )
 
+## Se escalan píxeles a [-1, 1]
+capa_normalizacion = tf.keras.layers.Rescaling(1./127.5, offset=-1)
+train_ds = train_ds.map(lambda x, y: (capa_normalizacion(x), y))
+val_ds = val_ds.map(lambda x, y: (capa_normalizacion(x), y))
 
 # AUMENTO DE DATOS (Hace zoom, voltea, gira, etc.)
 data_augmentation = tf.keras.Sequential([
@@ -50,7 +54,7 @@ data_augmentation = tf.keras.Sequential([
 # Tomamos MobileNet V2 y modificamos ciertos parámetros para adecuarlo a
 # nuestro proyecto
 base_model = tf.keras.applications.MobileNetV2(
-    input_shape=(224, 224, 3), # De momento, mantenemos la deficicion original
+    input_shape=(96, 96, 3), # De momento, mantenemos la deficicion original
                                # para la que está diseñado este modelo.
     alpha=0.35,                # alpha es el parámetro más importante a tener en cuenta para reducir el tamaño de nuesto modelo
                                # con él se determina el número de filtro que tendrá nuestra red neuronal.
@@ -69,10 +73,7 @@ base_model.trainable = False # Para mantener sus conocimientos anteriores
 # Crear el modelo secuencial
 model = tf.keras.Sequential([
 
-    tf.keras.layers.InputLayer(input_shape=(224, 224, 3)),
-
-    # Se escalan píxeles a [-1, 1]
-    tf.keras.layers.Rescaling(1./127.5, offset=-1),
+    tf.keras.layers.InputLayer(input_shape=(96, 96, 3)),
 
     base_model, # Añadimos el modelo MobileNet V2 modificado
 
@@ -84,7 +85,18 @@ model = tf.keras.Sequential([
     tf.keras.layers.Dense(1, activation='sigmoid')
 ])
 
-model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
+# 1. Le decimos al modelo que, además de la exactitud, queremos que mida esto:
+model.compile(
+    loss='binary_crossentropy',
+    metrics=[
+        tf.keras.metrics.BinaryAccuracy(name='accuracy'),
+        tf.keras.metrics.AUC(name='auc', num_thresholds=10000),
+        tf.keras.metrics.AUC(
+            name='auc_precision_recall', curve='PR', num_thresholds=10000),
+        tf.keras.metrics.Precision(name='precision'),
+        tf.keras.metrics.Recall(name='recall')
+    ]
+)
 
 # Entreno y guardo los datos para analizarlos posteriormente
 tensorboard = TensorBoard(log_dir='logs/mobileNetV2')
@@ -102,17 +114,16 @@ PATH_PRUEBA = 'datasets/tests'
 # Cargamos un dataset que había dejado reservado para esto
 test_ds = tf.keras.utils.image_dataset_from_directory(
     PATH_PRUEBA,
-    image_size=(224, 224),
+    image_size=IMG_SIZE,
     color_mode='rgb',
     batch_size=32,
-    shuffle=True # Barajamos
+    shuffle=True
 )
 
-# Evaluación
-loss, accuracy = model.evaluate(test_ds)
+test_ds = test_ds.map(lambda x, y: (capa_normalizacion(x), y))
 
-print(f"\nExactitud: {accuracy * 100:.2f}%")
-print(f"\nPérdida: {loss * 100:.2f}%")
+# Prueba el modelo con el dataset de test
+resultados = model.evaluate(test_ds)
 
 # Codigo que muestra de forma visual cómo funciona el modelo
 for images, labels in test_ds.take(1):
@@ -123,7 +134,7 @@ for images, labels in test_ds.take(1):
     for i in range(32):
         ax = plt.subplot(11, 3, i + 1)
 
-        img_array = images[i].numpy().astype("uint8")
+        img_array = ((images[i].numpy() + 1.0) * 127.5).astype("uint8")
         plt.imshow(img_array)
 
         probabilidad = predicciones[i][0]
@@ -141,6 +152,7 @@ for images, labels in test_ds.take(1):
 
     plt.savefig('resultado_entrenamiento.png')
     print("Gráfica guardada como resultado_entrenamiento.png")
+
 
 # Se exporta el modelo en formato normal
 model.save('models/modelo_caracoles_original.keras')
