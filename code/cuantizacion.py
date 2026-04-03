@@ -84,3 +84,8 @@ tflite_models_dir = pathlib.Path("models/")
 
 tflite_model_quant_file = tflite_models_dir/"modelo_caracoles_int8.tflite"
 tflite_model_quant_file.write_bytes(tflite_model_quant)
+
+# Finalmente, a la raspberry no vamos a llevar el modelo tal y como
+# le hemos exportado sino que hay que transformarlo:
+# Ejecutamos esto en el terminal:
+# xxd -i modelo_96x96_int8.tflite > model_data.cc
