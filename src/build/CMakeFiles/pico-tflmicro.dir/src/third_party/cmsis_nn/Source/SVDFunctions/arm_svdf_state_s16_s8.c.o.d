@@ -1,0 +1,35 @@
+CMakeFiles/pico-tflmicro.dir/src/third_party/cmsis_nn/Source/SVDFunctions/arm_svdf_state_s16_s8.c.o: \
+ /home/sandra/Escritorio/Prácticas/proyectoTinyML/src/src/third_party/cmsis_nn/Source/SVDFunctions/arm_svdf_state_s16_s8.c \
+ /home/sandra/Escritorio/Prácticas/proyectoTinyML/src/src/third_party/cmsis_nn/Include/arm_nnfunctions.h \
+ /home/sandra/Escritorio/Prácticas/proyectoTinyML/src/src/third_party/cmsis_nn/Include/arm_nn_math_types.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/lib/gcc/arm-none-eabi/13.3.1/include/limits.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/lib/gcc/arm-none-eabi/13.3.1/include/syslimits.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/arm-none-eabi/include/limits.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/arm-none-eabi/include/newlib.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/arm-none-eabi/include/_newlib_version.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/arm-none-eabi/include/sys/cdefs.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/arm-none-eabi/include/machine/_default_types.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/arm-none-eabi/include/sys/features.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/lib/gcc/arm-none-eabi/13.3.1/include/stddef.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/arm-none-eabi/include/sys/syslimits.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/lib/gcc/arm-none-eabi/13.3.1/include/stdint.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/arm-none-eabi/include/stdint.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/arm-none-eabi/include/sys/_intsup.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/arm-none-eabi/include/sys/_stdint.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/arm-none-eabi/include/string.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/arm-none-eabi/include/_ansi.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/arm-none-eabi/include/sys/config.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/arm-none-eabi/include/machine/ieeefp.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/arm-none-eabi/include/sys/reent.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/arm-none-eabi/include/_ansi.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/arm-none-eabi/include/sys/_types.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/arm-none-eabi/include/machine/_types.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/arm-none-eabi/include/sys/lock.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/arm-none-eabi/include/sys/_locale.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/arm-none-eabi/include/strings.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/arm-none-eabi/include/sys/string.h \
+ /home/sandra/Escritorio/Prácticas/proyectoTinyML/src/src/third_party/cmsis_nn/Include/arm_nn_types.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/lib/gcc/arm-none-eabi/13.3.1/include/stdbool.h \
+ /home/sandra/Escritorio/Prácticas/proyectoTinyML/src/src/third_party/cmsis_nn/Include/arm_nnsupportfunctions.h \
+ /home/sandra/Escritorio/Prácticas/proyectoTinyML/src/src/third_party/cmsis_nn/Include/Internal/arm_nn_compiler.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/lib/gcc/arm-none-eabi/13.3.1/include/arm_acle.h

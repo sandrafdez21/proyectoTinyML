@@ -1,0 +1,74 @@
+.
+├── code                            // Direcctorio en el que se encuentra codigo
+│   │                               // para la creacion y cuantizacion de los modelos
+│   │                               // Tambien hay pruebas de la raspberry pico
+│   ├── creacionModelos
+│   │   ├── mobileNetV2.py
+│   │   └── modelosIniciales.py
+│   ├── cuantizacion
+│   │   ├── cuantizacion.py
+│   │   └── pruebaCuantizado.py
+│   └── pruebasRaspberry
+│       ├── prueba1
+│       ├── prueba2
+│       └── prueba3
+├── datasets                        // Utilizado para el entrenamiento del modelo
+│   ├── conversion_imagenes.py
+│   ├── dataset
+│   │   ├── noSnail
+│   │   └── snail
+│   ├── datasetCompleto.txt
+│   ├── miniDataset
+│   │   ├── noSnail
+│   │   └── snail
+│   └── tests
+│       ├── noSnail
+│       └── snail
+├── documents                       // Documentos donde se explican los procesos realizados
+│   ├── comparacion_modelos.pdf
+│   ├── cuantizacion_mobilenet.pdf
+│   ├── metricas.pdf
+│   ├── modelo_MobileNetV2.pdf
+│   └── pruebas_raspberry.pdf
+├── logs                            // Generado para observar el funcionamiento de los modelos
+├── models                          // Se guarda los modelos, también los lite y los cuantizados
+│   ├── modelo1
+│   ├── modelo2
+│   ├── modelo3
+│   ├── modeloMobileNetV2_224x224
+│   └── modeloMobileNetV2_64x64
+├── README.md
+├── requirements.txt                // Software requerido para el proyecto
+├── src                             // Codigo c++ para ejecutar el modelo en la pico
+│   ├── benchmark_results.txt
+│   ├── build
+│   │   └── examples
+│   │       └── deteccionCaracol
+│   │           └── deteccionCaracol.uf2    // Fichero que se anhade a la pico
+│   ├── examples
+│   │   ├── deteccion_caracol_mobilenetv2   // Codigo para MobileNetV2
+│   │   │   ├── CMakeLists.txt
+│   │   │   ├── imagen_prueba.cpp
+│   │   │   ├── imagen_prueba.h
+│   │   │   ├── main.cpp
+│   │   │   ├── main_functions.cpp
+│   │   │   ├── main_functions.h
+│   │   │   ├── model_data_96x96.cpp
+│   │   │   └── model_data_96x96.h
+│   │   ├── deteccion_caracol_modelo3       // Codigo para modelo propio
+│   │   │   ├── CMakeLists.txt
+│   │   │   ├── imagen_prueba.cpp
+│   │   │   ├── imagen_prueba.h
+│   │   │   ├── main.cpp
+│   │   │   ├── main_functions.cpp
+│   │   │   ├── main_functions.h
+│   │   │   ├── model_data_96x96.cpp
+│   │   │   └── model_data_96x96.h
+│   │   └── hello_world                     // Proyecto ejemplo tomado como base
+│   ├── pico_sdk_import.cmake
+│   ├── README.md
+│   ├── src
+│   ├── sync
+│   └── tests
+└── venv
+7110 directories, 38677 files

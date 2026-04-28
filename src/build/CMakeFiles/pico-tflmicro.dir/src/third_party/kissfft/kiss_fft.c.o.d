@@ -1,0 +1,29 @@
+CMakeFiles/pico-tflmicro.dir/src/third_party/kissfft/kiss_fft.c.o: \
+ /home/sandra/Escritorio/Prácticas/proyectoTinyML/src/src/third_party/kissfft/kiss_fft.c \
+ /home/sandra/Escritorio/Prácticas/proyectoTinyML/src/src/third_party/kissfft/_kiss_fft_guts.h \
+ /home/sandra/Escritorio/Prácticas/proyectoTinyML/src/src/third_party/kissfft/kiss_fft.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/arm-none-eabi/include/stdlib.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/arm-none-eabi/include/machine/ieeefp.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/arm-none-eabi/include/_ansi.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/arm-none-eabi/include/newlib.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/arm-none-eabi/include/_newlib_version.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/arm-none-eabi/include/sys/config.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/arm-none-eabi/include/sys/features.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/lib/gcc/arm-none-eabi/13.3.1/include/stddef.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/arm-none-eabi/include/sys/reent.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/arm-none-eabi/include/_ansi.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/arm-none-eabi/include/sys/cdefs.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/arm-none-eabi/include/machine/_default_types.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/arm-none-eabi/include/sys/_types.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/arm-none-eabi/include/machine/_types.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/arm-none-eabi/include/sys/lock.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/arm-none-eabi/include/machine/stdlib.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/arm-none-eabi/include/alloca.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/arm-none-eabi/include/stdio.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/lib/gcc/arm-none-eabi/13.3.1/include/stdarg.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/arm-none-eabi/include/sys/stdio.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/arm-none-eabi/include/math.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/lib/gcc/arm-none-eabi/13.3.1/include/limits.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/lib/gcc/arm-none-eabi/13.3.1/include/syslimits.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/arm-none-eabi/include/limits.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/arm-none-eabi/include/sys/syslimits.h

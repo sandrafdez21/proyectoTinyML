@@ -1,0 +1,33 @@
+examples/person_detection/CMakeFiles/image_provider_test.dir/image_provider.cpp.o: \
+ /home/sandra/Escritorio/Prácticas/proyectoTinyML/src/examples/person_detection/image_provider.cpp \
+ /home/sandra/Escritorio/Prácticas/proyectoTinyML/src/examples/person_detection/image_provider.h \
+ /home/sandra/Escritorio/Prácticas/proyectoTinyML/src/src/tensorflow/lite/c/common.h \
+ /home/sandra/Escritorio/Prácticas/proyectoTinyML/src/src/tensorflow/lite/core/c/common.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/lib/gcc/arm-none-eabi/13.3.1/include/stdarg.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/lib/gcc/arm-none-eabi/13.3.1/include/stdbool.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/lib/gcc/arm-none-eabi/13.3.1/include/stddef.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/lib/gcc/arm-none-eabi/13.3.1/include/stdint.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/arm-none-eabi/include/stdint.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/arm-none-eabi/include/machine/_default_types.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/arm-none-eabi/include/sys/features.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/arm-none-eabi/include/_newlib_version.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/arm-none-eabi/include/sys/_intsup.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/arm-none-eabi/include/sys/_stdint.h \
+ /home/sandra/Escritorio/Prácticas/proyectoTinyML/src/src/tensorflow/lite/core/c/c_api_types.h \
+ /home/sandra/Escritorio/Prácticas/proyectoTinyML/src/src/tensorflow/compiler/mlir/lite/core/c/tflite_types.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/arm-none-eabi/include/c++/13.3.1/utility \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/arm-none-eabi/include/c++/13.3.1/arm-none-eabi/thumb/v6-m/nofp/bits/c++config.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/arm-none-eabi/include/c++/13.3.1/arm-none-eabi/thumb/v6-m/nofp/bits/os_defines.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/arm-none-eabi/include/c++/13.3.1/arm-none-eabi/thumb/v6-m/nofp/bits/cpu_defines.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/arm-none-eabi/include/c++/13.3.1/bits/stl_relops.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/arm-none-eabi/include/c++/13.3.1/bits/stl_pair.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/arm-none-eabi/include/c++/13.3.1/type_traits \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/arm-none-eabi/include/c++/13.3.1/bits/move.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/arm-none-eabi/include/c++/13.3.1/bits/utility.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/arm-none-eabi/include/c++/13.3.1/initializer_list \
+ /home/sandra/Escritorio/Prácticas/proyectoTinyML/src/src/tensorflow/lite/micro/tflite_bridge/micro_error_reporter.h \
+ /home/sandra/.pico-sdk/toolchain/13_3_Rel1/arm-none-eabi/include/c++/13.3.1/cstdarg \
+ /home/sandra/Escritorio/Prácticas/proyectoTinyML/src/src/tensorflow/lite/core/api/error_reporter.h \
+ /home/sandra/Escritorio/Prácticas/proyectoTinyML/src/src/tensorflow/compiler/mlir/lite/core/api/error_reporter.h \
+ /home/sandra/Escritorio/Prácticas/proyectoTinyML/src/src/tensorflow/lite/micro/compatibility.h \
+ /home/sandra/Escritorio/Prácticas/proyectoTinyML/src/examples/person_detection/model_settings.h

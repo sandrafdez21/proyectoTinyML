@@ -1,0 +1,3 @@
+tests/kernels_detection_postprocess_test/CMakeFiles/kernels_detection_postprocess_test.dir/tensorflow/lite/micro/kernels/detection_postprocess_flexbuffers_generated_data.cpp.o: \
+ /home/sandra/Escritorio/Prácticas/proyectoTinyML/src/tests/kernels_detection_postprocess_test/tensorflow/lite/micro/kernels/detection_postprocess_flexbuffers_generated_data.cpp \
+ /home/sandra/Escritorio/Prácticas/proyectoTinyML/src/tests/kernels_detection_postprocess_test/../../tests/kernels_detection_postprocess_test/tensorflow/lite/micro/kernels/detection_postprocess_flexbuffers_generated_data.h

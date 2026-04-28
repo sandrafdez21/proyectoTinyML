@@ -3,3 +3,4 @@ matplotlib
 numpy
 tensorboard
 setuptools==69.5.1
+screen
